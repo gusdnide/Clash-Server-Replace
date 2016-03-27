@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="HSActionBarCompatBackground" />
+    <style name="HSActionBarCompatBackground.Dark" parent="@style/HSActionBarCompatBackground">
+        <item name="android:background">@color/hs__actionbar_compat_background_dark</item>
+    </style>
+    <style name="HSActionBarCompatBackground.Light" parent="@style/HSActionBarCompatBackground">
+        <item name="android:background">@color/hs__actionbar_compat_background_light</item>
+    </style>
+    <style name="HSActionBarCompatBackground.LightDarkActionBar" parent="@style/HSActionBarCompatBackground">
+        <item name="android:background">@color/hs__actionbar_compat_background_light_dark_actionbar</item>
+    </style>
+    <style name="HSActionBarCompatItemBase">
+        <item name="android:background">@drawable/hs__actionbar_compat_selectable_item_background</item>
+        <item name="android:scaleType">center</item>
+    </style>
+    <style name="HSActionBarCompatProgressIndicator" parent="@android:style/Widget.ProgressBar.Large">
+        <item name="android:indeterminate">true</item>
+    </style>
+    <style name="HSActionBarCompatTitle">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:id">@id/hs__actionbar_compat_title</item>
+        <item name="android:paddingLeft">6.0dip</item>
+        <item name="android:paddingRight">6.0dip</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="HSActionBarCompatTitle.Dark" parent="@style/HSActionBarCompatTitle">
+        <item name="android:textColor">@color/hs__actionbar_compat_text_primary_dark</item>
+    </style>
+    <style name="HSActionBarCompatTitle.Light" parent="@style/HSActionBarCompatTitle">
+        <item name="android:textColor">@color/hs__actionbar_compat_text_primary_light</item>
+    </style>
+    <style name="HSDivider">
+        <item name="android:background">?hs__contentSeparatorColor</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1.0dip</item>
+    </style>
+    <style name="HSEditTextCompat" parent="@android:style/Widget.EditText">
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:background">@drawable/hs__edit_text_compat_background</item>
+    </style>
+    <style name="Helpshift" />
+    <style name="Helpshift.Compat.Theme.Dark" parent="@android:style/Theme">
+        <item name="android:windowNoTitle">false</item>
+        <item name="android:windowContentOverlay">@drawable/hs__actionbar_compat_shadow</item>
+        <item name="android:windowTitleSize">@dimen/hs__actionbar_compat_height</item>
+        <item name="android:windowTitleBackgroundStyle">@style/HSActionBarCompatBackground.Dark</item>
+        <item name="android:editTextStyle">@style/HSEditTextCompat</item>
+        <item name="hs__actionbarCompatTitleStyle">@style/HSActionBarCompatTitle.Dark</item>
+        <item name="hs__actionbarCompatItemBaseStyle">@style/HSActionBarCompatItemBase</item>
+        <item name="hs__actionbarCompatProgressIndicatorStyle">@style/HSActionBarCompatProgressIndicator</item>
+        <item name="hs__actionBarCompatTextColorPrimary">@color/hs__actionbar_compat_text_primary_dark</item>
+    </style>
+    <style name="Helpshift.Compat.Theme.Light" parent="@android:style/Theme.Light">
+        <item name="android:windowNoTitle">false</item>
+        <item name="android:windowContentOverlay">@drawable/hs__actionbar_compat_shadow</item>
+        <item name="android:windowTitleSize">@dimen/hs__actionbar_compat_height</item>
+        <item name="android:windowTitleBackgroundStyle">@style/HSActionBarCompatBackground.Light</item>
+        <item name="android:editTextStyle">@style/HSEditTextCompat</item>
+        <item name="hs__actionbarCompatTitleStyle">@style/HSActionBarCompatTitle.Light</item>
+        <item name="hs__actionbarCompatItemBaseStyle">@style/HSActionBarCompatItemBase</item>
+        <item name="hs__actionbarCompatProgressIndicatorStyle">@style/HSActionBarCompatProgressIndicator</item>
+        <item name="hs__actionBarCompatTextColorPrimary">@color/hs__actionbar_compat_text_primary_light</item>
+    </style>
+    <style name="Helpshift.Compat.Theme.Light.DarkActionBar" parent="@android:style/Theme.Light">
+        <item name="android:windowNoTitle">false</item>
+        <item name="android:windowContentOverlay">@drawable/hs__actionbar_compat_shadow</item>
+        <item name="android:windowTitleSize">@dimen/hs__actionbar_compat_height</item>
+        <item name="android:windowTitleBackgroundStyle">@style/HSActionBarCompatBackground.LightDarkActionBar</item>
+        <item name="android:editTextStyle">@style/HSEditTextCompat</item>
+        <item name="hs__actionbarCompatTitleStyle">@style/HSActionBarCompatTitle.Dark</item>
+        <item name="hs__actionbarCompatItemBaseStyle">@style/HSActionBarCompatItemBase</item>
+        <item name="hs__actionbarCompatProgressIndicatorStyle">@style/HSActionBarCompatProgressIndicator</item>
+        <item name="hs__actionBarCompatTextColorPrimary">@color/hs__actionbar_compat_text_primary_dark</item>
+    </style>
+    <style name="Helpshift.Style" parent="@style/Helpshift" />
+    <style name="Helpshift.Style.ContactUsButton" parent="@style/Helpshift.Style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="Helpshift.Style.FaqHelpfulButton" parent="@style/Helpshift.Style" />
+    <style name="Helpshift.Style.FaqUnhelpfulButton" parent="@style/Helpshift.Style" />
+    <style name="Helpshift.Style.FaqsListItem" parent="@style/Helpshift.Style">
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">@dimen/hs__msgPreferredItemPaddingLeft</item>
+        <item name="android:paddingTop">@dimen/hs__listPreferredItemPaddingTop</item>
+        <item name="android:paddingRight">@dimen/hs__msgPreferredItemPaddingRight</item>
+        <item name="android:paddingBottom">@dimen/hs__listPreferredItemPaddingBottom</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">@dimen/hs__listPreferredItemHeightSmall</item>
+    </style>
+    <style name="Helpshift.Style.QuestionsPagerTabStrip" parent="@style/Helpshift.Style">
+        <item name="android:layout_gravity">top</item>
+        <item name="android:paddingBottom">8.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="Helpshift.Theme.Activity" parent="@style/Helpshift.Theme.Base" />
+    <style name="Helpshift.Theme.Base" parent="@style/Helpshift.Theme.Light.DarkActionBar" />
+    <style name="Helpshift.Theme.Dark" parent="@style/Helpshift.Compat.Theme.Dark">
+        <item name="hs__faqsPagerTabStripIndicatorColor">@color/hs__questions_pagertabstrip_indicator_dark</item>
+        <item name="hs__faqsFooterBackgroundColor">@color/hs__question_footer_background_dark</item>
+        <item name="hs__messagesTextColor">@color/hs__messages_text_dark</item>
+        <item name="hs__contentSeparatorColor">@color/hs__separator_dark</item>
+        <item name="hs__faqFooterSeparatorColor">@color/hs__faq_footer_separator_dark</item>
+        <item name="hs__chatBubbleSeparatorColor">@color/hs__chat_bubble_separator_dark</item>
+        <item name="hs__actionButtonIconColor">@color/hs__actionbutton_icon_dark</item>
+        <item name="hs__actionButtonNotificationIconColor">@color/hs__actionbutton_notification_icon_dark</item>
+        <item name="hs__actionButtonNotificationTextColor">@color/hs__actionbutton_notification_text_dark</item>
+        <item name="hs__buttonCompoundDrawableIconColor">@color/hs__button_compound_drawable_icon_dark</item>
+        <item name="hs__sendMessageButtonIconColor">@color/hs__send_message_button_icon_dark</item>
+        <item name="hs__sendMessageButtonActiveIconColor">@color/hs__send_message_button_active_icon_dark</item>
+        <item name="hs__acceptButtonIconColor">@color/hs__accept_button_icon_dark</item>
+        <item name="hs__rejectButtonIconColor">@color/hs__reject_button_icon_dark</item>
+        <item name="hs__faqHelpfulButtonTextColor">@color/hs__question_helpful_button_text_dark</item>
+        <item name="hs__faqUnhelpfulButtonTextColor">@color/hs__question_unhelpful_button_text_dark</item>
+        <item name="hs__attachScreenshotButtonIconColor">@color/hs__attach_screenshot_button_icon_dark</item>
+        <item name="hs__reviewButtonIconColor">@color/hs__review_button_icon_dark</item>
+        <item name="hs__adminChatBubbleColor">@color/hs__admin_chat_bubble_dark</item>
+        <item name="hs__userChatBubbleColor">@color/hs__user_chat_bubble_dark</item>
+        <item name="hs__csatDialogBackgroundColor">@color/hs__csat_dialog_background_color_dark</item>
+        <item name="hs__downloadAttachmentButtonIconColor">@color/hs__download_attachment_button_icon_dark</item>
+        <item name="hs__launchAttachmentButtonIconColor">@color/hs__launch_attachment_button_icon_dark</item>
+        <item name="hs__searchHighlightColor">@color/hs__search_highlight_color_dark</item>
+        <item name="hs__attachScreenshotActionButtonIcon">@drawable/hs__attach_screenshot_action_button</item>
+        <item name="hs__searchActionButtonIcon">@drawable/hs__action_search</item>
+        <item name="hs__conversationActionButtonIcon">@drawable/hs__chat_new</item>
+        <item name="hs__conversationNotificationActionButtonIcon">@drawable/hs__chat_notif</item>
+        <item name="hs__startConversationActionButtonIcon">@drawable/hs__send</item>
+        <item name="hs__searchOnNewConversationDoneActionButtonIcon">@drawable/hs__search_on_conversation_done</item>
+        <item name="hs__chatBubbleAdminBackground">@drawable/hs__chat_bubble_admin</item>
+        <item name="hs__chatBubbleUserBackground">@drawable/hs__chat_bubble_user</item>
+        <item name="hs__selectableItemBackground">@drawable/hs__actionbar_compat_selectable_item_background</item>
+        <item name="hs__faqsPagerTabStripStyle">@style/Helpshift.Style.QuestionsPagerTabStrip</item>
+        <item name="hs__faqsListItemStyle">@style/Helpshift.Style.FaqsListItem</item>
+        <item name="hs__contactUsButtonStyle">@style/Helpshift.Style.ContactUsButton</item>
+        <item name="hs__faqHelpfulButtonStyle">@style/Helpshift.Style.FaqHelpfulButton</item>
+        <item name="hs__faqUnhelpfulButtonStyle">@style/Helpshift.Style.FaqUnhelpfulButton</item>
+    </style>
+    <style name="Helpshift.Theme.Dialog" parent="@style/Helpshift.Theme.Base">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <style name="Helpshift.Theme.Light" parent="@style/Helpshift.Compat.Theme.Light">
+        <item name="hs__faqsPagerTabStripIndicatorColor">@color/hs__questions_pagertabstrip_indicator_light</item>
+        <item name="hs__faqsFooterBackgroundColor">@color/hs__question_footer_background_light</item>
+        <item name="hs__messagesTextColor">@color/hs__messages_text_light</item>
+        <item name="hs__contentSeparatorColor">@color/hs__separator_light</item>
+        <item name="hs__faqFooterSeparatorColor">@color/hs__faq_footer_separator_light</item>
+        <item name="hs__chatBubbleSeparatorColor">@color/hs__chat_bubble_separator_light</item>
+        <item name="hs__actionButtonIconColor">@color/hs__actionbutton_icon_light</item>
+        <item name="hs__actionButtonNotificationIconColor">@color/hs__actionbutton_notification_icon_light</item>
+        <item name="hs__actionButtonNotificationTextColor">@color/hs__actionbutton_notification_text_light</item>
+        <item name="hs__buttonCompoundDrawableIconColor">@color/hs__button_compound_drawable_icon_light</item>
+        <item name="hs__sendMessageButtonIconColor">@color/hs__send_message_button_icon_light</item>
+        <item name="hs__sendMessageButtonActiveIconColor">@color/hs__send_message_button_active_icon_light</item>
+        <item name="hs__acceptButtonIconColor">@color/hs__accept_button_icon_light</item>
+        <item name="hs__rejectButtonIconColor">@color/hs__reject_button_icon_light</item>
+        <item name="hs__faqHelpfulButtonTextColor">@color/hs__question_helpful_button_text_light</item>
+        <item name="hs__faqUnhelpfulButtonTextColor">@color/hs__question_unhelpful_button_text_light</item>
+        <item name="hs__attachScreenshotButtonIconColor">@color/hs__attach_screenshot_button_icon_light</item>
+        <item name="hs__reviewButtonIconColor">@color/hs__review_button_icon_light</item>
+        <item name="hs__adminChatBubbleColor">@color/hs__admin_chat_bubble_light</item>
+        <item name="hs__userChatBubbleColor">@color/hs__user_chat_bubble_light</item>
+        <item name="hs__csatDialogBackgroundColor">@color/hs__csat_dialog_background_color_light</item>
+        <item name="hs__downloadAttachmentButtonIconColor">@color/hs__download_attachment_button_icon_light</item>
+        <item name="hs__launchAttachmentButtonIconColor">@color/hs__launch_attachment_button_icon_light</item>
+        <item name="hs__searchHighlightColor">@color/hs__search_highlight_color_light</item>
+        <item name="hs__attachScreenshotActionButtonIcon">@drawable/hs__attach_screenshot_action_button</item>
+        <item name="hs__searchActionButtonIcon">@drawable/hs__action_search</item>
+        <item name="hs__conversationActionButtonIcon">@drawable/hs__chat_new</item>
+        <item name="hs__conversationNotificationActionButtonIcon">@drawable/hs__chat_notif</item>
+        <item name="hs__startConversationActionButtonIcon">@drawable/hs__send</item>
+        <item name="hs__searchOnNewConversationDoneActionButtonIcon">@drawable/hs__search_on_conversation_done</item>
+        <item name="hs__chatBubbleAdminBackground">@drawable/hs__chat_bubble_admin</item>
+        <item name="hs__chatBubbleUserBackground">@drawable/hs__chat_bubble_user</item>
+        <item name="hs__selectableItemBackground">@drawable/hs__actionbar_compat_selectable_item_background</item>
+        <item name="hs__faqsPagerTabStripStyle">@style/Helpshift.Style.QuestionsPagerTabStrip</item>
+        <item name="hs__faqsListItemStyle">@style/Helpshift.Style.FaqsListItem</item>
+        <item name="hs__contactUsButtonStyle">@style/Helpshift.Style.ContactUsButton</item>
+        <item name="hs__faqHelpfulButtonStyle">@style/Helpshift.Style.FaqHelpfulButton</item>
+        <item name="hs__faqUnhelpfulButtonStyle">@style/Helpshift.Style.FaqUnhelpfulButton</item>
+    </style>
+    <style name="Helpshift.Theme.Light.DarkActionBar" parent="@style/Helpshift.Compat.Theme.Light.DarkActionBar">
+        <item name="hs__faqsPagerTabStripIndicatorColor">@color/hs__questions_pagertabstrip_indicator_dark</item>
+        <item name="hs__faqsFooterBackgroundColor">@color/hs__question_footer_background_light</item>
+        <item name="hs__messagesTextColor">@color/hs__messages_text_light</item>
+        <item name="hs__contentSeparatorColor">@color/hs__separator_light</item>
+        <item name="hs__faqFooterSeparatorColor">@color/hs__faq_footer_separator_light</item>
+        <item name="hs__chatBubbleSeparatorColor">@color/hs__chat_bubble_separator_light</item>
+        <item name="hs__actionButtonIconColor">@color/hs__actionbutton_icon_dark</item>
+        <item name="hs__actionButtonNotificationIconColor">@color/hs__actionbutton_notification_icon_dark</item>
+        <item name="hs__actionButtonNotificationTextColor">@color/hs__actionbutton_notification_text_dark</item>
+        <item name="hs__buttonCompoundDrawableIconColor">@color/hs__button_compound_drawable_icon_light</item>
+        <item name="hs__sendMessageButtonIconColor">@color/hs__send_message_button_icon_light</item>
+        <item name="hs__sendMessageButtonActiveIconColor">@color/hs__send_message_button_active_icon_light</item>
+        <item name="hs__acceptButtonIconColor">@color/hs__accept_button_icon_light</item>
+        <item name="hs__rejectButtonIconColor">@color/hs__reject_button_icon_light</item>
+        <item name="hs__faqHelpfulButtonTextColor">@color/hs__question_helpful_button_text_light</item>
+        <item name="hs__faqUnhelpfulButtonTextColor">@color/hs__question_unhelpful_button_text_light</item>
+        <item name="hs__attachScreenshotButtonIconColor">@color/hs__attach_screenshot_button_icon_light</item>
+        <item name="hs__reviewButtonIconColor">@color/hs__review_button_icon_light</item>
+        <item name="hs__adminChatBubbleColor">@color/hs__admin_chat_bubble_light</item>
+        <item name="hs__userChatBubbleColor">@color/hs__user_chat_bubble_light</item>
+        <item name="hs__csatDialogBackgroundColor">@color/hs__csat_dialog_background_color_light</item>
+        <item name="hs__downloadAttachmentButtonIconColor">@color/hs__download_attachment_button_icon_light</item>
+        <item name="hs__launchAttachmentButtonIconColor">@color/hs__launch_attachment_button_icon_light</item>
+        <item name="hs__searchHighlightColor">@color/hs__search_highlight_color_light</item>
+        <item name="hs__attachScreenshotActionButtonIcon">@drawable/hs__attach_screenshot_action_button</item>
+        <item name="hs__searchActionButtonIcon">@drawable/hs__action_search</item>
+        <item name="hs__conversationActionButtonIcon">@drawable/hs__chat_new</item>
+        <item name="hs__conversationNotificationActionButtonIcon">@drawable/hs__chat_notif</item>
+        <item name="hs__startConversationActionButtonIcon">@drawable/hs__send</item>
+        <item name="hs__searchOnNewConversationDoneActionButtonIcon">@drawable/hs__search_on_conversation_done</item>
+        <item name="hs__chatBubbleAdminBackground">@drawable/hs__chat_bubble_admin</item>
+        <item name="hs__chatBubbleUserBackground">@drawable/hs__chat_bubble_user</item>
+        <item name="hs__selectableItemBackground">@drawable/hs__actionbar_compat_selectable_item_background</item>
+        <item name="hs__faqsPagerTabStripStyle">@style/Helpshift.Style.QuestionsPagerTabStrip</item>
+        <item name="hs__faqsListItemStyle">@style/Helpshift.Style.FaqsListItem</item>
+        <item name="hs__contactUsButtonStyle">@style/Helpshift.Style.ContactUsButton</item>
+        <item name="hs__faqHelpfulButtonStyle">@style/Helpshift.Style.FaqHelpfulButton</item>
+        <item name="hs__faqUnhelpfulButtonStyle">@style/Helpshift.Style.FaqUnhelpfulButton</item>
+    </style>
+    <style name="NotificationText">
+        <item name="android:textColor">?android:textColorPrimary</item>
+    </style>
+    <style name="NotificationTextShadow" parent="@style/NotificationText">
+        <item name="android:textColor">?android:textColorPrimary</item>
+        <item name="android:shadowColor">@android:color/background_dark</item>
+        <item name="android:shadowDx">1.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+    <style name="NotificationTitle">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+    </style>
+    <style name="ButtonBackground">
+        <item name="android:background">@android:color/background_dark</item>
+    </style>
+    <style name="Theme.IAPTheme" parent="@android:style/Theme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <style name="WalletFragmentDefaultDetailsTextAppearance">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/wallet_secondary_text_holo_dark</item>
+        <item name="android:textColorHighlight">@color/wallet_highlighted_text_holo_dark</item>
+        <item name="android:textColorHint">@color/wallet_hint_foreground_holo_dark</item>
+        <item name="android:textColorLink">@color/wallet_holo_blue_light</item>
+    </style>
+    <style name="WalletFragmentDefaultDetailsHeaderTextAppearance" parent="@style/WalletFragmentDefaultDetailsTextAppearance">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="WalletFragmentDefaultButtonTextAppearance">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/wallet_primary_text_holo_light</item>
+        <item name="android:textColorHighlight">@color/wallet_highlighted_text_holo_light</item>
+        <item name="android:textColorHint">@color/wallet_hint_foreground_holo_light</item>
+        <item name="android:textColorLink">@color/wallet_link_text_light</item>
+    </style>
+    <style name="WalletFragmentDefaultStyle">
+        <item name="buyButtonHeight">48.0dip</item>
+        <item name="buyButtonWidth">match_parent</item>
+        <item name="buyButtonText">buy_with_google</item>
+        <item name="buyButtonAppearance">classic</item>
+        <item name="maskedWalletDetailsTextAppearance">@style/WalletFragmentDefaultDetailsTextAppearance</item>
+        <item name="maskedWalletDetailsHeaderTextAppearance">@style/WalletFragmentDefaultDetailsHeaderTextAppearance</item>
+        <item name="maskedWalletDetailsBackground">@color/wallet_bright_foreground_holo_light</item>
+        <item name="maskedWalletDetailsButtonTextAppearance">@style/WalletFragmentDefaultButtonTextAppearance</item>
+        <item name="maskedWalletDetailsButtonBackground">@android:drawable/btn_default</item>
+        <item name="maskedWalletDetailsLogoTextColor">@color/wallet_bright_foreground_holo_dark</item>
+        <item name="maskedWalletDetailsLogoImageType">classic</item>
+    </style>
+    <style name="com_facebook_loginview_default_style" parent="@android:style/Widget.Button">
+        <item name="android:textSize">@dimen/com_facebook_loginview_text_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/com_facebook_loginview_text_color</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/com_facebook_button_blue</item>
+        <item name="android:paddingLeft">@dimen/com_facebook_loginview_padding_left</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="com_facebook_loginview_silver_style" parent="@android:style/Widget.Button">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff4b5164</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/com_facebook_loginbutton_silver</item>
+        <item name="android:height">44.0dip</item>
+        <item name="android:width">205.0dip</item>
+    </style>
+    <style name="tooltip_bubble_text">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:gravity">left</item>
+        <item name="android:shadowColor">#40000000</item>
+        <item name="android:shadowDy">-1.0</item>
+        <item name="android:shadowRadius">0.25</item>
+    </style>
+</resources>

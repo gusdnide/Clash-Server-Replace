@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="apkExpansionId" name="loaderLayout">false</item>
+    <item type="apkExpansionId" name="titleText">false</item>
+    <item type="apkExpansionId" name="statusText">false</item>
+    <item type="apkExpansionId" name="downloaderDashboard">false</item>
+    <item type="apkExpansionId" name="progressAsFraction">false</item>
+    <item type="apkExpansionId" name="progressAsPercentage">false</item>
+    <item type="apkExpansionId" name="progressBar">false</item>
+    <item type="apkExpansionId" name="progressAverageSpeed">false</item>
+    <item type="apkExpansionId" name="progressTimeRemaining">false</item>
+    <item type="apkExpansionId" name="pauseButton">false</item>
+</resources>

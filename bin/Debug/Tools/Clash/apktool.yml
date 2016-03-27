@@ -1,0 +1,20 @@
+version: 2.0.3
+apkFileName: clash.apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1
+sdkInfo:
+  minSdkVersion: '15'
+  targetSdkVersion: '22'
+packageInfo:
+  forced-package-id: '127'
+versionInfo:
+  versionCode: '646'
+  versionName: 7.200.19
+sharedLibrary: false
+doNotCompress:
+- arsc
+- csv
+- hash
+- sc

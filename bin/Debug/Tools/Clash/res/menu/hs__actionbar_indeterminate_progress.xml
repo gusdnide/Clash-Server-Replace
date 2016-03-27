@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:enabled="false" android:id="@android:id/progress" android:visible="false" android:title="" android:showAsAction="always" android:actionLayout="@layout/hs__actionbar_indeterminate_progress" />
+</menu>

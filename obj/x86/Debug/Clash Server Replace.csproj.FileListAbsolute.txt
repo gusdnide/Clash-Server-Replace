@@ -1,0 +1,4 @@
+C:\Users\gusdnide\documents\visual studio 2010\Projects\Clash Server Replace\Clash Server Replace\bin\Debug\Clash Server Replace.exe
+C:\Users\gusdnide\documents\visual studio 2010\Projects\Clash Server Replace\Clash Server Replace\bin\Debug\Clash Server Replace.pdb
+C:\Users\gusdnide\documents\visual studio 2010\Projects\Clash Server Replace\Clash Server Replace\obj\x86\Debug\Clash Server Replace.exe
+C:\Users\gusdnide\documents\visual studio 2010\Projects\Clash Server Replace\Clash Server Replace\obj\x86\Debug\Clash Server Replace.pdb

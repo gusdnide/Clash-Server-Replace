@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="UnsatisfiedLinkErrorReinstallPrompt">Vi har oppdaget at {GAME} ikke ble riktig installert. Avinstaller spillet og installer det på nytt fra Play Store.</string>
+    <string name="text_verifying_download">Verifiserer nedlasting</string>
+    <string name="text_validation_failed">XAPK-filvalidering mislyktes.</string>
+    <string name="text_button_pause">Sett nedlasting på pause</string>
+    <string name="text_button_resume">Fortsett nedlasting</string>
+</resources>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@apkExpansionId/loaderLayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.0">
+        <TextView android:textStyle="bold" android:id="@apkExpansionId/titleText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" />
+        <TextView android:textStyle="bold" android:id="@apkExpansionId/statusText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" />
+        <LinearLayout android:orientation="vertical" android:id="@apkExpansionId/downloaderDashboard" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <TextView android:id="@apkExpansionId/progressAsFraction" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="0MB / 0MB" android:layout_alignParentLeft="true" style="@android:style/TextAppearance.Small" />
+                <TextView android:id="@apkExpansionId/progressAsPercentage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0%" android:layout_alignRight="@apkExpansionId/progressBar" style="@android:style/TextAppearance.Small" />
+                <ProgressBar android:id="@apkExpansionId/progressBar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:layout_below="@apkExpansionId/progressAsFraction" style="?android:attr/progressBarStyleHorizontal" />
+                <TextView android:id="@apkExpansionId/progressAverageSpeed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_below="@apkExpansionId/progressBar" android:layout_alignParentLeft="true" style="@android:style/TextAppearance.Small" />
+                <TextView android:id="@apkExpansionId/progressTimeRemaining" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@apkExpansionId/progressBar" android:layout_alignRight="@apkExpansionId/progressBar" style="@android:style/TextAppearance.Small" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@apkExpansionId/downloaderDashboard" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <Button android:layout_gravity="center_vertical" android:id="@apkExpansionId/pauseButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="10.0dip" android:minWidth="94.0dip" android:minHeight="40.0dip" android:text="@string/text_button_pause" android:layout_weight="0.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
